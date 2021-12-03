@@ -1,0 +1,22 @@
+{% extends "pages/base.html" %}
+
+{%load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block title %} - Agradecimento{% endblock %}
+	</head>
+	
+	{% block content %}<body>
+		<div id="pagina-download">
+			<!-- Breadcrumbs -->
+			<div class="slideshow-container breadcrumbs">
+				<div style="background:url('{% static '/midias/images/banner-estacoes-sombra.png' %}');"><center>
+					<h1 class="tit-geral">Muito obrigada!</h1>
+					<p class="txt-geral">Agradecemos a sua mensagem, e logo entraremos em contato!</p>
+				</center></div>
+			</div>
+			
+		</div>
+	</body>{% endblock %}
+</html>

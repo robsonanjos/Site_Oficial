@@ -1,0 +1,73 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Season Gems{% block title %}{% endblock %}</title>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+		<link href="{% static 'fontawesome-free-5.15.3-web/css/all.css' %}" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/c529ef0d01.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="{% static 'midias/images/favicon.png' %}" sizes="16x32" type="images.png'" />
+		<script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+</head>
+
+    {% block header %}
+       <div id="menu-principal" class="barra-nav nav-transparent">
+            <div class="container">
+                <div id="menu-default">
+                    <div id="logo-nav">
+                    <a href="index" target="_parent"><img class="img-logo" src="{% static '/midias/images/logo.png' %}"></a>
+                    </div>
+                    <div id="btns-nav">
+                        <a href="../" target="_parent">Home</a>
+                        <a href="download" class="btn-menu-download" target="_parent">Download</a>
+                        <div class="item-menu-pai">
+                            <button class="btn-item-menu-pai">Wiki <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <div class="item-menu-cont">
+                                <a href="historia" target="_parent">História</a>
+                                <a href="personagens" target="_parent">Personagens</a>
+                                <a href="mapas" target="_parent">Mapas</a>
+                                <a href="gemas" target="_parent">Gemas</a>
+                            </div>
+                        </div>
+                        <div class="item-menu-pai">
+                            <button class="btn-item-menu-pai">Suporte <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <div class="item-menu-cont">
+                                <a href="contato" target="_parent">Contato</a>
+                                <a href="faq" target="_parent">FAQ</a>
+                                <a href="{% static 'midias/docs/manual_do_jogo___Season_Gems.pdf' %}" target="_blank">Manual do usuário</a>
+                            </div>
+                        </div>
+                        <a href="equipe" target="_parent">Equipe</a>
+                    </div>
+                </div>
+                <div id="menu-mobile">
+                    <div id="logo-nav">
+                    <a href="index" target="_parent"><img class="img-logo" src="../../midias/images/logo.png"></a>
+                    </div>
+                    <div id="btns-nav"><i class="fa fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+	
+	{% block footer %}
+		<div id="container-footer">
+			<div class="footer-left">
+				<a target="_blank" href="https://www.instagram.com/jogo.seasongems/"><img src="{% static 'midias/images/instagram.png' %}" style="max-width:20px;height: auto;margin-right:20px;"></a>
+				<a target="_blank" href="https://www.linkedin.com/company/season-gems"><img src="{% static 'midias/images/linkedin.png' %}" style="max-width:20px;height: auto;" ></a>
+			</div>
+			<div class="footer-right">
+				<span>© 2021 - Todos os direitos reservados Season Gems</span>
+			</div>
+		</div>
+	{% endblock %}
+
+</html>

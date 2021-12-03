@@ -1,0 +1,894 @@
+/********** Style.css **********/
+/*** by Julia ******************/
+
+/********** Elementos Principais **********/
+*{
+	font-family: 'Rubik', sans-serif;
+}
+
+body{
+	margin:0;
+	background-color:#494949;
+}
+
+.container{
+	padding:0px 80px;
+}
+
+/********** Elementos Gerais **********/
+#conteudo-pagina{
+	width:100%;
+	height: 4500px;
+}
+
+button {
+    background: none;
+}
+
+.tit-geral{
+	color:white;
+}
+
+.txt-geral{
+	color:white;
+	font-size:18px;
+}
+
+.btn-geral{
+	border: 2px solid white;
+	text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+	border-radius: 50px;
+	color: #fff;
+	background-image: -webkit-linear-gradient(45deg, #a805c3 50%, transparent 50%);
+	background-image: linear-gradient(45deg, #a805c3 50%, transparent 50%);
+	background-position: 100%;
+	background-size: 400%;
+	-webkit-transition: background 300ms ease-in-out;
+	transition: background 500ms ease-in-out;
+	cursor:pointer;
+}
+.btn-geral:hover {
+	background-position: 0;
+}
+
+.icn-btn-geral {
+    display: none!important;
+    padding-left: 5px;
+}
+
+.btn-geral:hover .icn-btn-geral {
+    display: inline!important;
+}
+
+.breadcrumbs div{
+	background-position:center!important;
+	background-repeat:no-repeat!important;
+	background-size:cover!important;
+}
+
+.breadcrumbs .tit-geral {
+    padding: 150px 80px 0px 80px;
+	margin:0;
+	font-size: 50px;
+}
+
+.breadcrumbs .txt-geral {
+    padding: 0px 80px 80px 80px;
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+a.leia-mais {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a.leia-mais:hover {
+    color: #a805c3;
+}
+
+.icone-redes {
+  font-size: 20px;
+  color: white;
+  margin: 0px 18px;
+}
+
+/********** Menu Principal **********/
+.barra-nav{
+  position: fixed;
+  width: 100%;
+  height:80px;
+  top:0;
+	z-index:1;
+}
+
+#menu-principal{
+	width:100%!important;
+	position:fixed;
+}
+
+.img-logo{
+	max-height:65px;
+	padding: 10px 0;
+}
+
+.nav-colored {
+	overflow: hidden;
+	width:100%;
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+	background-color: #3e3e3e;
+	animation: slide 0.5s forwards;
+}
+
+#btns-nav > a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+  text-decoration: none;
+}
+
+.item-menu-pai {
+  float: left;
+  overflow: hidden;
+}
+
+.item-menu-pai .btn-item-menu-pai {
+  font-size: 20px;  
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  color: white;
+  padding: 28px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#btns-nav .btns-nav a:hover, .item-menu-pai:hover .btn-item-menu-pai, #btns-nav > a:hover {
+  border-bottom: 5px solid #a805c3;
+  padding: 25px 16px!important;
+}
+
+.item-menu-cont {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.item-menu-cont a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  background-color:#858585;
+  display: block;
+  text-align: left;
+  font-size:18px;
+}
+
+.item-menu-cont a:hover {
+  color: #a505c0;
+}
+
+.item-menu-pai:hover .item-menu-cont {
+  display: block;
+  position: fixed;
+}
+
+#btns-nav{
+	float:right;
+}
+
+#logo-nav{
+	float:left;
+}
+
+.fa-chevron-down {
+    font-size: 12px;
+}
+
+a.btn-menu-download:after {
+    background-color: #a805c3;
+    content: "Beta";
+    color: white;
+    font-size: 14px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 8px;
+    right: 375px;
+	border-radius: 5px;
+}
+
+a.btn-menu-download:hover::after {
+    top: 5px;
+}
+
+#menu-mobile {
+    display:none;
+}
+
+@media screen and (max-width: 1000px) {
+  #menu-default {
+    display:none;
+  }
+  
+  #menu-mobile {
+    display:block;
+  }
+  
+  .img-logo {
+    max-height: 50px;
+    padding: 15px 0;
+  }
+}
+
+i.fa.fa-bars {
+    color: white;
+    font-size: 30px;
+    padding: 25px 0;
+}
+
+/**** Slide Show ****/
+.mySlides{
+	display:none;
+}
+
+.conteudo-slide {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 35%;
+}
+
+.conteudo-slide .txt-slide {
+    color: white;
+    margin: auto auto 50px auto;
+    text-transform: uppercase;
+	max-width: 75%;
+}
+
+#pagina-home .mySlides img{
+	width:100%;
+	filter:brightness(0.35);
+}
+
+
+/********** Rodapé **********/
+#rodape {
+    width: 100%;
+	height:100px;
+}
+
+#container-footer{
+	border-top: 1px solid white;
+	margin:0px 80px;
+}
+
+#container-footer span, #container-footer span{
+	color:white;
+}
+
+.footer-left{
+	float:left;
+}
+
+.footer-right{
+	float:right;
+}
+
+.footer-left, .footer-right {
+    padding: 30px 0px;
+}
+
+/********** Home **********/
+#pagina-home .container{
+	margin: 50px 20px;
+}
+
+.temas-wiki {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+	margin-bottom: 35px;
+}
+
+.personagens-home, .mapas-home, .gemas-home {
+    padding: 20px;
+}
+
+.temas-wiki .txt-geral {
+    margin-bottom: 30px;
+}
+
+/********** FAQ **********/
+/********** Início Accordion**********/
+.accordion {
+  background-color: #858585;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius:5px;
+}
+
+.active, .accordion:hover {
+  background-color: #a805c3 !important;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f1f1f1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius:5px;
+}
+
+.accordion:before {
+  content: '+';
+  font-size: 18px;
+  color: white!important;
+  float: right;
+  font-weight: 900;
+  margin-left: 5px;
+}
+
+.faixas-accordion .active:before {
+  content: "-";
+}
+
+.faixas-accordion button:nth-child(1), .faixas-accordion button:nth-child(5), .faixas-accordion button:nth-child(9) {
+    background-color: #494949;
+}
+/********** Final Accordion**********/
+
+.container.faq{
+	padding:80px!important;
+	background-color:#606060;
+}
+
+/********** Contato **********/
+#contato{
+	padding:100px 0px 50px 0px;
+}
+
+/***** Slider *****/
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  overflow-x: clip !important;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/***** Equipe *****/
+.foto-perfil{
+	background-color: white;
+    border-radius: 200px;
+    margin: 50px 80px;
+}
+
+.nome-perfil{
+	font-size:40px!important;
+}
+
+.equipe-left{
+	margin: 50px 0px 50px 80px;
+	text-align: left;
+	float:left;
+}
+
+.equipe-right{
+	margin: 50px 80px 50px 0px;
+	float:right;
+	text-align: right;
+}
+
+.descricao-perfil{
+    font-size: 25px;
+	line-height:1.5;
+}
+
+/***** Formulário para atualizações *****/
+.form-atualizacoes {
+    padding: 50px 100px;
+    background-color: #606060;
+}
+
+.form-atualizacoes form {
+    display: grid;
+    grid-template-columns: 25% 30% 35% 10%;
+}
+
+.form-atualizacoes label {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-atualizacoes input {
+    font-size: 22px;
+    background-color: #494949;
+    border-radius: 5px;
+    width: 90%;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+.form-atualizacoes button {
+    background-color: #494949;
+    color: white;
+    font-size: 22px;
+    padding: 5px 22px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-atualizacoes button:hover {
+    background-color: #a805c3;
+    cursor: pointer;
+}
+
+/***** Formulário para dúvidas/sugestões/feedback *****/
+.form-comentario{
+	display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 50px 100px;
+}
+
+.form-comentario label {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-comentario input, .form-comentario textarea {
+    font-size: 22px;
+    background-color: #494949;
+    border-radius: 5px;
+    width: 90%;
+    color: white;
+    border: 1px solid #606060;
+    padding: 5px 10px;
+}
+
+.form-comentario button {
+    background-color: #494949;
+    color: white;
+    font-size: 22px;
+    padding: 5px 22px;
+    border: 1px solid #606060;
+    border-radius: 5px;
+}
+
+.form-comentario button:hover {
+    background-color: #a805c3;
+    cursor: pointer;
+}
+
+.form-comentario .metade-campos input {
+    width: 40%!important;
+}
+
+.form-comentario input{
+	margin:0px 60px 30px 0px;
+}
+
+.form-comentario textarea{
+	height: 140px;
+}
+
+#aceito{
+	margin: 20px 0px;
+    width: 25px;
+}
+
+.aceito{
+	font-size:18px!important;
+}
+
+.aceito a {
+    text-decoration: none;
+    color: #dd31e6;
+}
+
+.form-atualizacoes:after {
+    content: ' * Ao clicar em enviar você concorda com os Termos e Políticas de Privacidade do site.';
+    position: absolute;
+    padding: 15px 0;
+    right: 310px;
+    color: #fff;
+}
+
+@media screen and (max-width: 1800px){
+	.form-comentario input, .form-comentario textarea{
+		margin:0px 33px 30px 0px;
+	}
+	
+	.widget-ant-prox-page {
+		grid-template-columns: 30% 40% 30%!important;
+	}
+	
+	.form-atualizacoes form {
+		grid-template-columns: 30% 31% 31% 8%!important;
+	}
+	
+	.mapas{
+		display: grid;
+		grid-template-columns: 70% 30%!important;
+	}
+	
+	.conteudo-wiki.menor{
+		display:block!important;
+		margin-bottom:30px;
+	}
+	
+	.conteudo-wiki.maior{
+		display:none!important;
+	}
+}
+
+/****** Elementos que levam a outras páginas *****/
+
+/***** Simples *****/
+.widget-ant-prox-page{
+	display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding: 50px 100px;
+    background-color: #494949;
+}
+
+.txt-ant-prox{
+	font-weight: 600;
+    color: white;
+    font-size: 22px;
+}
+
+.proximo a, .proximo p {
+    float: right;
+	text-align: right;
+}
+
+.anterior a, .anterior p {
+    float: left;
+}
+
+/**** Com texto ****/
+.widget-nova-page{
+	display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 50px 100px;
+}
+
+/***** Personagens *****/
+.personagem{
+	display: grid;
+    grid-template-columns: 50% 50%;
+	padding: 75px 100px;
+}
+
+.img-personagem{
+	transition: all 0.5s;
+}
+
+.img-personagem:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/***** Mapas *****/
+.mapas{
+	display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+
+.inverno, .verao, .primavera, .outono{
+	padding: 75px 80px!important;
+}
+
+.outono, .primavera{
+	background-color:#606060!important;
+}
+
+.img-mapas{
+	transition: all 0.5s;
+	max-height:400px;
+	border-radius:50px;
+}
+
+.img-mapas:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+.mapas span{
+	font-size:25px;
+	padding:15px 0;
+	color:#3e3e3e;
+}
+
+/***** Gemas *****/
+.gemas{
+	display: grid;
+    grid-template-columns: 50% 50%;
+	padding: 75px 100px;
+}
+
+.img-gemas{
+	transition: all 0.5s;
+}
+
+.img-gemas:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+	-webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+#pagina-gemas img.img-gemas, #pagina-gemas .conteudo-wiki {
+    max-height: 250px;
+}
+
+.img-gemas{
+	max-height: 350px;
+}
+
+.gema-right{
+	float: right;
+	margin-right: 100px;
+}
+
+.gema-left{
+	float: left;
+	margin-left: 100px;
+}
+
+.conteudo-inverno {
+	background-image: -webkit-linear-gradient(45deg, #0c646c 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, #0c646c 50%, transparent 50%)!important;
+}
+
+.conteudo-outono{
+	background-image: -webkit-linear-gradient(45deg, #dc6e3b 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, #dc6e3b 50%, transparent 50%)!important;
+}
+
+.conteudo-verao{
+	background-image: -webkit-linear-gradient(45deg, #5cb159 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, #5cb159 50%, transparent 50%)!important;
+}
+
+.conteudo-primavera{
+	background-image: -webkit-linear-gradient(45deg, #9a169a 50%, transparent 50%)!important;
+	background-image: linear-gradient(45deg, 9a169a 50%, transparent 50%)!important;
+}
+
+/***** Conteúdo - Wiki (Personagens / Mapas / Gemas) *****/
+.conteudo-wiki .txt-geral {
+    font-size: 22px;
+}
+
+.conteudo-wiki .tit-geral {
+    font-size: 60px;
+	margin-bottom:0px;
+}
+
+.conteudo-wiki {
+  padding: 20px 50px;
+  border: 2px solid white;
+  border-radius: 50px;
+	background-image: -webkit-linear-gradient(45deg, #a805c3 50%, transparent 50%);
+	background-image: linear-gradient(45deg, #a805c3 50%, transparent 50%);
+	-webkit-transition: background 300ms ease-in-out;
+	transition: background 500ms ease-in-out;
+	background-position: 90%;
+	background-size: 400%;
+	margin-right:50px;
+}
+
+.conteudo-wiki:hover{
+	background-position: 0;
+}
+
+/***** Conteúdo - Página de Download *****/
+.conteudo-download{
+	display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 50px 0;
+}
+
+.links-download {
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: NONE;
+  background-color: #a805c3;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+#url-destino{
+	display:none!important;
+}
+
+/***** Política de Privacidade *****/
+.container.politica {
+    margin: 80px 0;
+    color: white;
+}
+
+.container.politica a {
+    color: #a805c3;
+    text-decoration: none;
+}
+
+/***** Aviso de Cookies *****/
+.box-cookies.hide {
+  display: none !important;
+}
+
+.box-cookies {
+  position: fixed;
+  background: rgba(0, 0, 0, .9);
+  width: 100%;
+  z-index: 998;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box-cookies .msg-cookies,
+.box-cookies .btn-cookies {
+  text-align: center;
+  padding: 25px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.box-cookies .btn-cookies {
+  background: #1e88e5;
+  cursor: pointer;
+  align-self: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .box-cookies {
+    flex-direction: column;
+  }
+}
+
+/**********************************************************************************************
+SVG
+**********************************************************************************************/
+tspan { white-space:pre; }
+.gema-svg { fill:#3e3e3e; } 
+
+.mini-gema{margin-bottom: 5px;}
+
+.mini-gema:hover span{color:white!important;}
+
+.ciano:hover .gema-svg{fill:#00dedf!important;}
+
+.ambar:hover .gema-svg{fill:#e9c476!important;}
+
+.jade:hover .gema-svg{fill:#00b781!important;}
+
+.pessego:hover .gema-svg{fill:#f4d9aa!important;}
+
+.verde-claro:hover .gema-svg{fill:#78c156!important;}
+
+.chumbo:hover .gema-svg{fill:#273538!important;}
+
+.tomate:hover .gema-svg{fill:#fe5335!important;}
+
+.sela-marrom:hover .gema-svg{fill:#743b2a!important;}
+
+.cafe:hover .gema-svg{fill:#2a0e0a!important;}
+
+.castanho-arenoso:hover .gema-svg{fill:#ff8d5b!important;}
+
+.ferrico-vermelho:hover .gema-svg{fill:#a73c2c!important;}
+
+.bistre:hover .gema-svg{fill:#413328!important;}
+
+.mediummaqua:hover .gema-svg{fill:#80d5e9!important;}
+
+.violeta-escuro:hover .gema-svg{fill:#3c4772!important;}
+
+.celeste:hover .gema-svg{fill:#0092dd!important;}
+
+.branco-neve:hover .gema-svg{fill:#e0eff4!important;}
+
+.cinza-ardosia:hover .gema-svg{fill:#595b72!important;}
+
+.azul-ardosia:hover .gema-svg{fill:#3e56a0!important;}
+
+.joias-menores{display:none;}

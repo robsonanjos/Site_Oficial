@@ -1,0 +1,68 @@
+{% extends "pages/base.html" %}
+
+{%load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block title %} - Download{% endblock %}
+	</head>
+	
+	{% block content %}<body>
+		<div id="pagina-download">
+			<!-- Breadcrumbs -->
+			<div class="slideshow-container breadcrumbs">
+				<div style="background:url('{% static '/midias/images/banner-estacoes-sombra.png' %}');"><center>
+					<h1 class="tit-geral">Download</h1>
+					<p class="txt-geral">Realize o download da versão beta, e se divirta!</p>
+				</center></div>
+			</div>
+			
+			<!-- Conteúdo da página -->
+			<div class="container conteudo-download">
+				<div>
+					<p class="txt-geral" style="font-size:28px;padding-left: 20px;">Faça o download a sua versão Beta e venha ajudar a bruxa Luna a resgatar as Seasons Gems e restaurar o mundo mágico de Ameth!</p>
+				</div>
+				<div>
+					<input value="Conheça o mundo de Ameth, e ajude a bruxinha Luna a concluir sua missão! Acesse o site: http://seasongems.atwebpages.com/ " id="url-destino"/>
+					<center style="margin:20px;"><a target="_blank" class="btn-geral" style="font-size:30px;padding: 5px 20px;" href="https://docs.google.com/uc?export=download&id=1xKhQSyS2B3DvWzcyX8ziOkqlq8-KSOVF">Download <i class="icn-btn-geral fa fa-download"></i></a></center>
+					<center><p class="txt-geral" style="max-width: 25%;font-size: 15px;">Compartilhe nosso jogo em suas redes:</p></center>
+					<center style="margin-bottom:10px;" class="share"><a target="_blank" href=" https://www.facebook.com/sharer/sharer.php?u=https://www.linkedin.com/company/80660319/admin/"><i class="fa fa-facebook icone-redes"></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/80660319/admin/" target="blank"><i class="fa fa-linkedin icone-redes"></i></a><a href="https://api.whatsapp.com/send?text=https://www.linkedin.com/company/80660319/admin/" target="_blank"><i class="fa fa-whatsapp icone-redes"></i></a></center>
+					<center><a class="links-download" href="{% static 'midias/docs/manual_do_jogo___Season_Gems.pdf' %}" target="_blank">Manual do usuário</a></center>
+				</div>
+			</div>
+			
+			<!-- Formulário atualizações - Inicio -->	
+			<div class="form-atualizacoes">
+				<form action="/agradecimento" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+					<div>
+						<label for="name">Receba atualizações sobre o jogo</label>
+					</div>
+					<div>
+						<input type="text" placeholder="Digite seu nome" id="name" />
+					</div>
+					<div>
+						<input type="email" placeholder="Digite seu e-mail" id="mail" />
+					</div>
+					<div class="button">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+			<!-- Formulário atualizações - Final -->
+			
+			<!-- Widget - Página anterior e próxima página -->
+			<div class="widget-ant-prox-page" style="background-color:#494949;">
+				<div class="anterior">
+					<p class="txt-ant-prox">Já jogou a versão beta do Season Gems?</p>
+					<a class="btn-geral" href="contato"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Dê um feedback!</a>
+				</div>
+				<div></div>
+				<div class="proximo">
+					<p class="txt-ant-prox">Conheça a toda a história do jogo!</p>
+					<a class="btn-geral" href="historia"> Página de história<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+			
+		</div>
+	</body>{% endblock %}
+</html>

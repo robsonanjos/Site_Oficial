@@ -1,0 +1,85 @@
+{% extends "pages/base.html" %}
+
+{%load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		{% block title %} - Contato{% endblock %}
+	</head>
+	
+	{% block content %}<body>
+		<div id="pagina-contato">
+			<!-- Breadcrumbs -->
+			<div class="slideshow-container breadcrumbs" style="background:url({% static 'midias/images/banner-estacoes-sombra.png' %});height:350px;"><center>
+				<h1 class="tit-geral">Contato</h1>
+				<p class="txt-geral">Mande sua dúvida/sugestão/feedback para nós!</p>
+			</center></div>
+			
+			<!-- Conteúdo da página -->
+			
+			<!-- Formulário atualizações - Inicio -->	
+			<div class="form-atualizacoes">
+				<form action="/agradecimento" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+					<div>
+						<label for="name">Receba atualizações sobre o jogo</label>
+					</div>
+					<div>
+						<input type="text" placeholder="Digite seu nome" id="name" />
+					</div>
+					<div>
+						<input type="email" placeholder="Digite seu e-mail" id="mail" />
+					</div>
+					<div class="button">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+			<!-- Formulário atualizações - Final -->
+			
+			<!-- Formulário dúvidas/sugestões/feedback - Inicio -->	
+			<div class="form-comentario">
+				<form action="/agradecimento" method=""><!-- Metodo não adicionado, será relacionado ao back-end -->
+					<div>
+						<label for="name">Entre em contato com a nossa equipe!</label>
+					</div>
+					<br><br>
+					<div class="metade-campos">
+						<input type="text" placeholder="Digite seu nome" id="name" />
+						<input type="email" placeholder="Digite seu e-mail" id="mail" />
+					</div>
+					<div>
+						<input type="text" placeholder="Digite o assunto da mensagem" id="subject" />
+					</div>
+					<div>
+						<textarea type="textarea" placeholder="Digite a mensagem" id="message" /></textarea>
+					</div>
+					<input type="checkbox" id="aceito" name="aceito" value="true"><label class="aceito" for="aceito">Li e concordo com os <a href="politica-de-privacidade" target="_blank">Termos de Política e Privacidade</a> do site.</label>
+					<div class="button">
+						<button type="submit">Enviar</button>
+					</div>
+				</form>
+				<img src="{% static 'midias/images/primavera.jpg' %}" style="max-width: 100%;">
+			</div>
+			<!-- Formulário dúvidas/sugestões/feedback - Final -->
+			
+			<!-- Widget que direciona ao manual do usuário e ao FAQ -->
+			<div class="widget-ant-prox-page" style="background-color: #606060;">
+				<div class="anterior">
+					<p class="txt-ant-prox">Tudo o que você precisa saber!</p>
+					<a class="btn-geral" href="{% static 'midias/docs/manual_do_jogo___Season_Gems.pdf' %}" target="_blank"><i class="icn-btn-geral fa fa-arrow-circle-left"></i> Manual do usuário</a>
+				</div>
+				<div></div>
+				<div class="proximo">
+					<p class="txt-ant-prox">Tire todas as suas dúvidas sobre o jogo!</p>
+					<a class="btn-geral" href="faq">Veja nosso FAQ <i class="icn-btn-geral fa fa-arrow-circle-right"></i></a>
+				</div>
+			</div>
+			
+			<!-- Widget que direciona a página de download do jogo -->
+			<div style="margin: 80px 0;">
+				<h1 class="tit-geral" style="text-align:center;">Faça download da versão Beta do Jogo</h1>
+				<center><a class="btn-geral" href="download" style="margin: 35px 0;">Download<i class="icn-btn-geral fa fa-arrow-circle-right"></i></a></center>
+			</div>
+
+	</body>{% endblock %}
+</html>
